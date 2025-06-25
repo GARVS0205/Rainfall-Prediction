@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore all .ipynb unless you want to track specific ones
+*.ipynb
+
+# Model artifacts (only track those in models/)
+outputs/*.pkl
+!outputs/models/*.pkl
+
+# Plots (already saved in outputs/plots)
+outputs/*.png
+!outputs/plots/*.png
+
+# Streamlit & Python logs
+*.log
+*.tmp
+*.bak
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VSCode or PyCharm config
+.vscode/
+.idea/
+
+# Ignore temporary files
+*.swp
+*.swo
+*.~ 
+
+# Ignore data if large or sensitive (optional)
+data/*.csv
+!data/sydney_rain_prediction.csv
